@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.semenbazanov.fencingschoolfxspring.controllers.AddApprenticeController">
+   <children>
+      <TextField fx:id="login" layoutX="145.0" layoutY="98.0" />
+      <TextField fx:id="password" layoutX="145.0" layoutY="160.0" />
+      <TextField fx:id="name" layoutX="145.0" layoutY="224.0" />
+      <TextField fx:id="surname" layoutX="145.0" layoutY="287.0" />
+      <TextField fx:id="patronymic" layoutX="145.0" layoutY="344.0" />
+      <TextField fx:id="phoneNumber" layoutX="145.0" layoutY="410.0" />
+      <Button layoutX="181.0" layoutY="474.0" mnemonicParsing="false" onAction="#toAdd" text="Button" />
+      <Label layoutX="144.0" layoutY="68.0" prefHeight="18.0" prefWidth="63.0" text="Логин" />
+      <Label layoutX="144.0" layoutY="131.0" text="Пароль" />
+      <Label layoutX="144.0" layoutY="195.0" text="Имя" />
+      <Label layoutX="144.0" layoutY="257.0" text="Фамилия" />
+      <Label layoutX="144.0" layoutY="319.0" text="Отчество" />
+      <Label layoutX="144.0" layoutY="381.0" text="Номер телефона" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.semenbazanov.fencingschoolfxspring.controllers.TrainerMainController">
+   <children>
+      <Label layoutX="521.0" layoutY="97.0" text="Фамилия" />
+      <Label layoutX="534.0" layoutY="144.0" text="Имя" />
+      <Label layoutX="507.0" layoutY="193.0" text="Отчество" />
+      <Label layoutX="496.0" layoutY="234.0" text="Опыт работы" />
+      <Button layoutX="558.0" layoutY="300.0" mnemonicParsing="false" onAction="#toUpdateTrainer" prefHeight="26.0" prefWidth="231.0" text="Обновить персональные данные" />
+      <Button layoutX="558.0" layoutY="345.0" mnemonicParsing="false" onAction="#toDeleteTrainer" prefHeight="26.0" prefWidth="231.0" text="Удалить аккаунт" />
+      <TableView fx:id="scheduleView" layoutX="861.0" layoutY="90.0" prefHeight="200.0" prefWidth="458.0" />
+      <TextField fx:id="surname" layoutX="599.0" layoutY="93.0" />
+      <TextField fx:id="name" layoutX="599.0" layoutY="140.0" />
+      <TextField fx:id="patronymic" layoutX="599.0" layoutY="189.0" />
+      <TextField fx:id="experience" layoutX="599.0" layoutY="230.0" />
+      <Button layoutX="868.0" layoutY="345.0" mnemonicParsing="false" onAction="#toAddTraining" prefHeight="26.0" prefWidth="142.0" text="Добавить запись" />
+      <Button layoutX="1183.0" layoutY="345.0" mnemonicParsing="false" onAction="#toDeleteTraining" prefHeight="26.0" prefWidth="142.0" text="Удалить запись" />
+      <ListView fx:id="apprentice_list" layoutX="21.0" layoutY="90.0" prefHeight="278.0" prefWidth="406.0" />
+      <Label layoutX="21.0" layoutY="62.0" prefHeight="18.0" prefWidth="187.0" text="Список учеников" />
+      <Button layoutX="558.0" layoutY="395.0" mnemonicParsing="false" onAction="#toExit" prefHeight="26.0" prefWidth="231.0" text="Выйти" />
+      <Button layoutX="21.0" layoutY="396.0" mnemonicParsing="false" onAction="#toAddApprentice" text="Добавить ученика" />
+   </children>
+</AnchorPane>

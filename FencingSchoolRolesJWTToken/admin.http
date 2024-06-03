@@ -1,0 +1,13 @@
+### Admin Token
+POST localhost:8080/admin
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTcwNzMwNCwiZXhwIjoxNzE1NzEwOTA0fQ.mZrfjUTCsb59qYggRRXSMTPJ3tyhfJpZhrTGZQPu8xY
+content-type:application/json
+
+{
+  "login": "Admin",
+  "password": "Admin",
+  "name": "Admin",
+  "surname": "Admin",
+  "patronymic": "Admin",
+  "company": "Admin Company"
+}

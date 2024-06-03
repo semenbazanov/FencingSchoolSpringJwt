@@ -1,0 +1,39 @@
+### Admin token
+POST localhost:8080/trainer
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+content-type: application/json
+
+{
+  "login": "Trainer",
+  "password": "Trainer",
+  "surname": "Smirnov",
+  "name": "Sidr",
+  "patronymic": "Denisovich",
+  "experience": 10
+}
+
+### Trainer token
+POST localhost:8080/trainer
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+content-type: application/json
+
+{
+  "login": "Trainer2",
+  "password": "Trainer2",
+  "surname": "Smir",
+  "name": "Smir",
+  "patronymic": "Denis",
+  "experience": 10
+}
+
+### get Trainer by id (Trainer token)
+GET localhost:8080/trainer/3
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+
+### get all Trainers (Admin token)
+GET localhost:8080/trainer
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### (Apprentice Token)
+DELETE localhost:8080/trainer/8
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334

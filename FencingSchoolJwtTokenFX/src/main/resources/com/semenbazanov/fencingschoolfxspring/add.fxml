@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.semenbazanov.fencingschoolfxspring.controllers.AddController">
+   <children>
+      <RadioButton fx:id="trainerButton" layoutX="143.0" layoutY="25.0" mnemonicParsing="false" onAction="#toPutTrainer" text="Тренер" />
+      <RadioButton fx:id="apprenticeButton" layoutX="291.0" layoutY="25.0" mnemonicParsing="false" onAction="#toPutApprentice" text="Ученик" />
+      <TextField fx:id="surname" layoutX="278.0" layoutY="132.0" />
+      <Label layoutX="149.0" layoutY="135.0" prefHeight="18.0" prefWidth="84.0" text="Фамилия" />
+      <Label layoutX="148.0" layoutY="172.0" prefHeight="18.0" prefWidth="62.0" text="Имя" />
+      <Label layoutX="148.0" layoutY="209.0" text="Отчество" />
+      <Label fx:id="additionalLabel" layoutX="149.0" layoutY="244.0" text="Номер телефона" />
+      <TextField fx:id="name" layoutX="278.0" layoutY="168.0" />
+      <TextField fx:id="patronymic" layoutX="278.0" layoutY="205.0" />
+      <TextField fx:id="additionalTextField" layoutX="278.0" layoutY="240.0" />
+      <Button layoutX="278.0" layoutY="283.0" mnemonicParsing="false" onAction="#toCreate" prefHeight="26.0" prefWidth="150.0" text="Создать" />
+      <TextField fx:id="password" layoutX="279.0" layoutY="90.0" />
+      <TextField fx:id="login" layoutX="279.0" layoutY="51.0" />
+      <Label layoutX="149.0" layoutY="94.0" text="Пароль" />
+      <Label layoutX="149.0" layoutY="55.0" text="Логин" />
+   </children>
+</AnchorPane>

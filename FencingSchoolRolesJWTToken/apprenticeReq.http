@@ -1,0 +1,89 @@
+### add Apprentice (Apprentice Token)
+POST localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+content-type:application/json
+
+{
+  "login": "Apprentice",
+  "password": "Apprentice",
+  "surname": "Iv",
+  "name": "Iv",
+  "patronymic": "Iv",
+  "phoneNumber": "89219234545"
+}
+
+### add Apprentice (Trainer Token)
+POST localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+content-type:application/json
+
+{
+  "login": "Apprentice2",
+  "password": "Apprentice2",
+  "surname": "Petrov",
+  "name": "Petr",
+  "patronymic": "Petrovich",
+  "phoneNumber": "89219234716"
+}
+
+### add Apprentice (Apprentice Token)
+POST localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+content-type:application/json
+
+{
+  "login": "Apprentice 3",
+  "password": "Apprentice 3",
+  "surname": "Petrov4",
+  "name": "Petr4",
+  "patronymic": "Petrovich4",
+  "phoneNumber": "89214347733"
+}
+
+### get by id
+GET localhost:8080/apprentice/2
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
+
+### get by incorrect id
+GET localhost:8080/apprentice/7
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### get all (Trainer Token)
+GET localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+
+### get all (Apprentice Token)
+GET localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### delete by id (Admin token)
+DELETE localhost:8080/apprentice/10
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### update
+POST localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+content-type:application/json
+
+{
+  "id": 4,
+  "login": "Apprentice",
+  "password": "$2a$10$BCu5DfvdW9qKWWAgyUHD0OuoMrAQ7qKporljmDyR.NgEqHitkHgr.",
+  "surname": "Smirnov",
+  "name": "Sidr",
+  "patronymic": "Denisovich",
+  "phoneNumber": "89219907283"
+}
+
+### update
+PUT localhost:8080/apprentice
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY5MDY3NywiZXhwIjoxNzE1Njk0Mjc3fQ.sHQWRLYahBDrODCeIqgNqNMw-r-Z0mUxNwRyaxHBY2k
+content-type:application/json
+
+{
+  "id": 2,
+  "surname": "Ivan",
+  "name": "Ivan",
+  "patronymic": "Ivanovich",
+  "phoneNumber": "89219233238"
+}

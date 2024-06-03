@@ -1,0 +1,72 @@
+### Admin Token
+POST localhost:8080/training/5/2
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY5MzY0NCwiZXhwIjoxNzE1Njk3MjQ0fQ.5Beqb6nerQweiYTE3s-hODSkbNJSCMNgLCk1xZEtj2A
+content-type:application/json
+
+{
+  "numberGym": 1,
+  "date": "26.05.2024",
+  "timeStart": "13:30"
+}
+
+### Apprentice Token
+POST localhost:8080/training/2/5
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+content-type:application/json
+
+{
+  "numberGym": 1,
+  "date": "25.05.2024",
+  "timeStart": "11:30"
+}
+
+### Trainer Token
+POST localhost:8080/training/2/6
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+content-type:application/json
+
+{
+  "numberGym": 1,
+  "date": "25.05.2024",
+  "timeStart": "12:00"
+}
+
+### Apprentice Token
+GET localhost:8080/training/1
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### Trainer Token
+GET localhost:8080/training/4
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+
+### Apprentice Token get Training by correct Trainer id
+GET localhost:8080/training/trainer/26
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### Admin Token get Training by incorrect Trainer id
+GET localhost:8080/training/trainer/2
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### Admin Token get Training by correct Apprentice id
+GET localhost:8080/training/apprentice/3
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### Admin token get Training by incorrect Apprentice id
+GET localhost:8080/training/apprentice/1
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### Apprentice Token get freeTime
+GET localhost:8080/training/time/2?date=25.05.2024
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### Trainer Token get freeDate
+GET localhost:8080/training/date/2
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+
+### Admin Token delete Training by correct id
+DELETE localhost:8080/training/1
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### Apprentice Token delete Training by incorrect id
+DELETE localhost:8080/training/5
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334

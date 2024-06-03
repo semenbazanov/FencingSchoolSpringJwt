@@ -1,0 +1,19 @@
+### Admin Token
+POST localhost:8080/trainer_schedule/5?dayWeek=saturday&start=09:00&end=17:00
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY5MzY0NCwiZXhwIjoxNzE1Njk3MjQ0fQ.5Beqb6nerQweiYTE3s-hODSkbNJSCMNgLCk1xZEtj2A
+
+### Trainer token
+POST localhost:8080/trainer_schedule/2?dayWeek=friday&start=09:00&end=14:00
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
+
+### Apprentice Token
+POST localhost:8080/trainer_schedule/26?dayWeek=friday&start=09:00&end=13:00
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBcHByZW50aWNlIiwicm9sZSI6IkFQUFJFTlRJQ0UiLCJpYXQiOjE3MTU2MTQ4NTIsImV4cCI6MTcxNTYxODQ1Mn0.pWzgJPLiTdiZcWhZdaeNku-JWGeJpueehpsVLM7w334
+
+### Admin Token
+GET localhost:8080/trainer_schedule/2
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTYxNTA5NiwiZXhwIjoxNzE1NjE4Njk2fQ.xZWWKLy0QUT8g3BcxGkagjjr5vcS4uxH-zcN4RrxZOw
+
+### Treainer Token
+DELETE localhost:8080/trainer_schedule/2?dayWeek=friday
+Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUcmFpbmVyIiwicm9sZSI6IlRSQUlORVIiLCJpYXQiOjE3MTU2MTQ2MzAsImV4cCI6MTcxNTYxODIzMH0.qrIZ1_m167AOHHk6gVozJD20UhDiTuGBsji3aITCFdM
