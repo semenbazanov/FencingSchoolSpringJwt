@@ -1,5 +1,7 @@
 ### get all Users (Admin Token)
-GET localhost:8080/user/all### get all Users (Admin Token)
+GET localhost:8080/user/all
+
+### get all Users (Admin Token)
 GET localhost:8080/user/all
 Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTc5NTExNCwiZXhwIjoxNzE1Nzk4NzE0fQ.5d8CJwSJMx1_ykVHIS_8M4QmKJSlzzUchSzpqWU8lRA
 
